@@ -1,0 +1,24 @@
+[project]
+name = "remote-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Atishaygang", email = "neelja825@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=4.0.11",
+    "google-api-python-client>=2.201.0",
+    "google-auth>=2.59.1",
+    "google-auth-oauthlib>=1.5.0",
+    "python-docx>=1.2.0",
+    "tzdata>=2026.5",
+]
+
+[project.scripts]
+remote-server = "remote_server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
